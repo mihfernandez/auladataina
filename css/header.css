@@ -8,11 +8,35 @@ header {
 header h1{
     font-size: 20px;
 }
-
+/* Padrão */
 header a{
     color: var(--highlight);
     font-size: 20px;
+    border-bottom: 2px solid transparent;
+    position: relative;
+    transition: color .4s ease;
 }
+
+header a::before{
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background-color: tomato;
+    bottom: -2px;
+    transition: width .4s ease;
+}
+
+/* Transição */
+header a:hover{
+    color: rgba(0, 0, 0, 1);
+    /* border-bottom: 2px solid transparent; */
+}
+
+header a:hover::before {
+    width: 100%;
+}
+
 
 @media screen and (max-width: 1000px) {
     header{
