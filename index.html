@@ -13,10 +13,12 @@
 
         <title>Fotógrafo</title>
 
-        <link rel="stylesheet" type="text/css" href="style.css" />
-        
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400;700&display=swap" rel="stylesheet">
+
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="style.css" />
+        
     </head>
     
     <body>
@@ -27,7 +29,7 @@
         </header>
 
         <main>
-            <section class="works">
+            <section class="works" style="background-image: url(assets/predio3.png);" >
 
                 <article class="work">
                     <h2>
@@ -35,30 +37,27 @@
                         <span>i</span>
                         <span>o</span>
                     </h2>
-                    <img src="assets/predio.jpg" alt="Predio" />
                 </article>
 
-                <article class="work full">
+                <article class="work full" data-aos="fade-up" style="background-image: url(assets/predio.jpg);">
                     <h2>A</h2>
                 </article>
 
-                <article class="work">
+                <article class="work" style="background-image: url(assets/predio4.png);" data-aos="flip-down">
                     <h2>P</h2>
-                    <img src="assets/predio.jpg" alt="Predio" />
                 </article>
 
-                <article class="work">
+                <article class="work" style="background-image: url(assets/predio2.png);">
                     <h2>O</h2>
-                    <img src="assets/predio.jpg" alt="Predio" />
                 </article>
 
             </section>
 
             <div class="about wrap" id="sobre">
-                <h2>Sobre</h2>
+                <h2 class="text">Sobre</h2>
                 <h3 class="title">Fotografia e Minimalismo.</h3>
                 
-                <div class="texts">
+                <div class="container">
                     <p class="text">Donec euismod vulputate sem vitae efficitur. Praesent viverra dictum elit, sed aliquam tellus eleifend nec. In erat justo, interdum facilisis sem et, aliquet efficitur ex. Maecenas volutpat erat arcu, eu ultrices tellus mattis eu. Fusce id odio vel ex blandit dignissim. Cras facilisis nibh id augue cursus, id ornare felis mollis.</p>
                     
                     <ul class="appear">
@@ -117,19 +116,24 @@
             </div>
             <div class="contact wrap">
                 <h2 class="title">Contato.</h2>
-                <a href="tel:+55 11 98830-2390">+55 11 98830-2390</a>
-                <a href="mailto:contato@gerome.com">contato@gerome.com</a>
+                <a class="text" href="tel:+55 11 98830-2390">+55 11 98830-2390</a>
+                <a class="text" href="mailto:contato@gerome.com">contato@gerome.com</a>
                 <nav>
-                    <a href="https://www.instagram.com/" target="_blank">Instagram</a>
-                    <a href="https://twitter.com/" target="_blank">Twitter</a>
-                    <a href="https://www.linkedin.com/" target="_blank">LinkedIn</a>
+                    <a class="text" href="https://www.instagram.com/" target="_blank">Instagram</a>
+                    <a class="text" href="https://twitter.com/" target="_blank">Twitter</a>
+                    <a class="text" href="https://www.linkedin.com/" target="_blank">LinkedIn</a>
                 </nav>
 
             </div>
         </main>
 
-        <footer class="wrap">
-            <div class="copyright">©2020 Todos os direitos reservados</div>
+        <footer class="wrap copyright">
+            <p>©2020 Todos os direitos reservados</p>
         </footer>
+
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
     </body>
 </html>

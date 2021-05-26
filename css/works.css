@@ -6,19 +6,22 @@
 }
 
 .works .work{
+    height: 100vh;
     position: relative;
-    background-color: coral;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
     cursor: pointer;
 }
 
 
 .works .full{
     grid-column: span 2;
-    height: 100vh;
-    background-image: url(assets/predio.jpg);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
+}
+
+.works .work img {
+    display: block;
+    max-width: 100%;
 }
 
 .works .work h2{
@@ -48,10 +51,6 @@
     opacity: 1;
 }
 
-.works .work img {
-    display: block;
-    max-width: 100%;
-}
 
 
 
@@ -67,11 +66,12 @@
     .work .work.full{
         margin: 0;
     }
+    /*
 
     .works .work h2{
         font-size: 100px;
         line-height: 100px;
-    }
+    } */
 }
 
 @media screen and (max-width: 700px){
